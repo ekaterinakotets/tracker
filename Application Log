@@ -1,0 +1,920 @@
+# Logfile created on 2016-07-19 19:31:53 +0000 by logger.rb/53141
+D, [2016-07-19T19:32:13.845255 #5540] DEBUG -- : 
+D, [2016-07-19T19:32:13.845508 #5540] DEBUG -- : 
+I, [2016-07-19T19:32:13.846121 #5540]  INFO -- : Started GET "/my_friends" for 82.131.86.226 at 2016-07-19 19:32:13 +0000
+D, [2016-07-19T19:32:13.877676 #5540] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+I, [2016-07-19T19:32:14.048695 #5540]  INFO -- : Processing by UsersController#my_friends as HTML
+D, [2016-07-19T19:32:14.104274 #5540] DEBUG -- :   [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+I, [2016-07-19T19:32:14.273922 #5540]  INFO -- :   Rendered common/_spinner.html.erb (8.8ms)
+I, [2016-07-19T19:32:14.274169 #5540]  INFO -- :   Rendered friends/_lookup.html.erb (16.0ms)
+D, [2016-07-19T19:32:14.290663 #5540] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = ?[0m  [["user_id", 4]]
+I, [2016-07-19T19:32:14.291112 #5540]  INFO -- :   Rendered users/my_friends.html.erb within layouts/application (50.9ms)
+I, [2016-07-19T19:32:14.954378 #5540]  INFO -- :   Rendered layouts/_navigation.html.erb (8.3ms)
+I, [2016-07-19T19:32:14.955374 #5540]  INFO -- : Completed 200 OK in 906ms (Views: 755.7ms | ActiveRecord: 1.9ms)
+D, [2016-07-19T19:32:15.278776 #5540] DEBUG -- : 
+D, [2016-07-19T19:32:15.279022 #5540] DEBUG -- : 
+I, [2016-07-19T19:32:15.279579 #5540]  INFO -- : Started GET "/assets/devise_bootstrap_views.self-397f5c503b7e0ad315dc70cedb38eb4e8a3af625a80fdfdeeba7f656bce8365b.css?body=1" for 82.131.86.226 at 2016-07-19 19:32:15 +0000
+D, [2016-07-19T19:32:15.442028 #5540] DEBUG -- : 
+D, [2016-07-19T19:32:15.442343 #5540] DEBUG -- : 
+I, [2016-07-19T19:32:15.443343 #5540]  INFO -- : Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 82.131.86.226 at 2016-07-19 19:32:15 +0000
+D, [2016-07-19T19:32:15.490682 #5540] DEBUG -- : 
+D, [2016-07-19T19:32:15.492344 #5540] DEBUG -- : 
+I, [2016-07-19T19:32:15.494224 #5540]  INFO -- : Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 82.131.86.226 at 2016-07-19 19:32:15 +0000
+D, [2016-07-19T19:32:15.534045 #5540] DEBUG -- : 
+D, [2016-07-19T19:32:15.535247 #5540] DEBUG -- : 
+I, [2016-07-19T19:32:15.536495 #5540]  INFO -- : Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 82.131.86.226 at 2016-07-19 19:32:15 +0000
+D, [2016-07-19T19:32:15.566876 #5540] DEBUG -- : 
+D, [2016-07-19T19:32:15.567365 #5540] DEBUG -- : 
+I, [2016-07-19T19:32:15.568225 #5540]  INFO -- : Started GET "/assets/custom.self-87f1dc06363257c3dab692b237c69f701f5587f2f5273f9bdce887c24e636e1b.css?body=1" for 82.131.86.226 at 2016-07-19 19:32:15 +0000
+D, [2016-07-19T19:32:15.596375 #5540] DEBUG -- : 
+D, [2016-07-19T19:32:15.603858 #5540] DEBUG -- : 
+I, [2016-07-19T19:32:15.604658 #5540]  INFO -- : Started GET "/assets/user_stocks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 82.131.86.226 at 2016-07-19 19:32:15 +0000
+D, [2016-07-19T19:32:15.625669 #5540] DEBUG -- : 
+D, [2016-07-19T19:32:15.626134 #5540] DEBUG -- : 
+I, [2016-07-19T19:32:15.628716 #5540]  INFO -- : Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 82.131.86.226 at 2016-07-19 19:32:15 +0000
+D, [2016-07-19T19:32:15.680393 #5540] DEBUG -- : 
+D, [2016-07-19T19:32:15.681616 #5540] DEBUG -- : 
+I, [2016-07-19T19:32:15.681964 #5540]  INFO -- : Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 82.131.86.226 at 2016-07-19 19:32:15 +0000
+D, [2016-07-19T19:32:15.722963 #5540] DEBUG -- : 
+D, [2016-07-19T19:32:15.723149 #5540] DEBUG -- : 
+I, [2016-07-19T19:32:15.723647 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 82.131.86.226 at 2016-07-19 19:32:15 +0000
+D, [2016-07-19T19:32:15.743300 #5540] DEBUG -- : 
+D, [2016-07-19T19:32:15.744086 #5540] DEBUG -- : 
+I, [2016-07-19T19:32:15.747725 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 82.131.86.226 at 2016-07-19 19:32:15 +0000
+D, [2016-07-19T19:32:15.783611 #5540] DEBUG -- : 
+D, [2016-07-19T19:32:15.784278 #5540] DEBUG -- : 
+I, [2016-07-19T19:32:15.784841 #5540]  INFO -- : Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 82.131.86.226 at 2016-07-19 19:32:15 +0000
+D, [2016-07-19T19:32:15.818841 #5540] DEBUG -- : 
+D, [2016-07-19T19:32:15.819663 #5540] DEBUG -- : 
+I, [2016-07-19T19:32:15.823249 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 82.131.86.226 at 2016-07-19 19:32:15 +0000
+D, [2016-07-19T19:32:15.847061 #5540] DEBUG -- : 
+D, [2016-07-19T19:32:15.847416 #5540] DEBUG -- : 
+I, [2016-07-19T19:32:15.847915 #5540]  INFO -- : Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 82.131.86.226 at 2016-07-19 19:32:15 +0000
+D, [2016-07-19T19:32:15.874836 #5540] DEBUG -- : 
+D, [2016-07-19T19:32:15.875051 #5540] DEBUG -- : 
+I, [2016-07-19T19:32:15.875470 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 82.131.86.226 at 2016-07-19 19:32:15 +0000
+D, [2016-07-19T19:32:15.898078 #5540] DEBUG -- : 
+D, [2016-07-19T19:32:15.898243 #5540] DEBUG -- : 
+I, [2016-07-19T19:32:15.898651 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 82.131.86.226 at 2016-07-19 19:32:15 +0000
+D, [2016-07-19T19:32:15.916501 #5540] DEBUG -- : 
+D, [2016-07-19T19:32:15.918150 #5540] DEBUG -- : 
+I, [2016-07-19T19:32:15.918888 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 82.131.86.226 at 2016-07-19 19:32:15 +0000
+D, [2016-07-19T19:32:15.939583 #5540] DEBUG -- : 
+D, [2016-07-19T19:32:15.940722 #5540] DEBUG -- : 
+I, [2016-07-19T19:32:15.943444 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 82.131.86.226 at 2016-07-19 19:32:15 +0000
+D, [2016-07-19T19:32:15.970406 #5540] DEBUG -- : 
+D, [2016-07-19T19:32:15.971486 #5540] DEBUG -- : 
+I, [2016-07-19T19:32:15.972340 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 82.131.86.226 at 2016-07-19 19:32:15 +0000
+D, [2016-07-19T19:32:15.991451 #5540] DEBUG -- : 
+D, [2016-07-19T19:32:15.992028 #5540] DEBUG -- : 
+I, [2016-07-19T19:32:15.992605 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 82.131.86.226 at 2016-07-19 19:32:15 +0000
+D, [2016-07-19T19:32:16.020412 #5540] DEBUG -- : 
+D, [2016-07-19T19:32:16.028146 #5540] DEBUG -- : 
+I, [2016-07-19T19:32:16.028962 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 82.131.86.226 at 2016-07-19 19:32:16 +0000
+D, [2016-07-19T19:32:16.050833 #5540] DEBUG -- : 
+D, [2016-07-19T19:32:16.051038 #5540] DEBUG -- : 
+I, [2016-07-19T19:32:16.051453 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 82.131.86.226 at 2016-07-19 19:32:16 +0000
+D, [2016-07-19T19:32:16.072437 #5540] DEBUG -- : 
+D, [2016-07-19T19:32:16.072664 #5540] DEBUG -- : 
+I, [2016-07-19T19:32:16.073098 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 82.131.86.226 at 2016-07-19 19:32:16 +0000
+D, [2016-07-19T19:32:16.086917 #5540] DEBUG -- : 
+D, [2016-07-19T19:32:16.087253 #5540] DEBUG -- : 
+I, [2016-07-19T19:32:16.088427 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 82.131.86.226 at 2016-07-19 19:32:16 +0000
+D, [2016-07-19T19:32:16.130306 #5540] DEBUG -- : 
+D, [2016-07-19T19:32:16.130474 #5540] DEBUG -- : 
+I, [2016-07-19T19:32:16.131008 #5540]  INFO -- : Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 82.131.86.226 at 2016-07-19 19:32:16 +0000
+D, [2016-07-19T19:32:16.166637 #5540] DEBUG -- : 
+D, [2016-07-19T19:32:16.166903 #5540] DEBUG -- : 
+I, [2016-07-19T19:32:16.167824 #5540]  INFO -- : Started GET "/assets/friends.self-9679189646438f794257e4ce1312872dda6392f4da96da755c4ceb9f7c86a5e7.js?body=1" for 82.131.86.226 at 2016-07-19 19:32:16 +0000
+D, [2016-07-19T19:32:16.190980 #5540] DEBUG -- : 
+D, [2016-07-19T19:32:16.192740 #5540] DEBUG -- : 
+I, [2016-07-19T19:32:16.193386 #5540]  INFO -- : Started GET "/assets/stocks.self-385534548d1ef91bcfbb797ff29c1db96bcec5490587b7913cc5d0d57c8910bb.js?body=1" for 82.131.86.226 at 2016-07-19 19:32:16 +0000
+D, [2016-07-19T19:32:16.211202 #5540] DEBUG -- : 
+D, [2016-07-19T19:32:16.211355 #5540] DEBUG -- : 
+I, [2016-07-19T19:32:16.211636 #5540]  INFO -- : Started GET "/assets/user_stocks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 82.131.86.226 at 2016-07-19 19:32:16 +0000
+D, [2016-07-19T19:32:16.225253 #5540] DEBUG -- : 
+D, [2016-07-19T19:32:16.225817 #5540] DEBUG -- : 
+I, [2016-07-19T19:32:16.226754 #5540]  INFO -- : Started GET "/assets/application.self-51288526f6b14c1a39d37c113555a0aac57cbadc5b0557aad4790c41f8f4d904.js?body=1" for 82.131.86.226 at 2016-07-19 19:32:16 +0000
+D, [2016-07-19T19:32:23.638986 #5540] DEBUG -- : 
+D, [2016-07-19T19:32:23.639368 #5540] DEBUG -- : 
+I, [2016-07-19T19:32:23.640461 #5540]  INFO -- : Started GET "/search_friends?utf8=%E2%9C%93&search_param=aaa&button=" for 82.131.86.226 at 2016-07-19 19:32:23 +0000
+F, [2016-07-19T19:32:23.662981 #5540] FATAL -- : 
+ActionController::RoutingError (uninitialized constant UserController):
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+I, [2016-07-19T19:32:23.775642 #5540]  INFO -- :   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (6.7ms)
+I, [2016-07-19T19:32:23.776136 #5540]  INFO -- :   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (35.7ms)
+D, [2016-07-19T19:33:00.777114 #5540] DEBUG -- : 
+D, [2016-07-19T19:33:00.777339 #5540] DEBUG -- : 
+I, [2016-07-19T19:33:00.778172 #5540]  INFO -- : Started GET "/search_friends?utf8=%E2%9C%93&search_param=aaa&button=" for 82.131.86.226 at 2016-07-19 19:33:00 +0000
+F, [2016-07-19T19:33:00.833199 #5540] FATAL -- : 
+ActionController::RoutingError (uninitialized constant UserController):
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+I, [2016-07-19T19:33:00.908165 #5540]  INFO -- :   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+I, [2016-07-19T19:33:00.908442 #5540]  INFO -- :   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (23.0ms)
+D, [2016-07-19T19:33:21.828719 #5540] DEBUG -- : 
+D, [2016-07-19T19:33:21.832205 #5540] DEBUG -- : 
+I, [2016-07-19T19:33:21.833303 #5540]  INFO -- : Started GET "/search_friends?utf8=%E2%9C%93&search_param=aaa&button=" for 82.131.86.226 at 2016-07-19 19:33:21 +0000
+F, [2016-07-19T19:33:21.881275 #5540] FATAL -- : 
+ActionController::RoutingError (uninitialized constant UserController):
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+I, [2016-07-19T19:33:22.024645 #5540]  INFO -- :   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+I, [2016-07-19T19:33:22.025478 #5540]  INFO -- :   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (39.0ms)
+D, [2016-07-19T19:34:13.225220 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:13.225492 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:13.225937 #5540]  INFO -- : Started GET "/my_friends" for 82.131.86.226 at 2016-07-19 19:34:13 +0000
+I, [2016-07-19T19:34:13.348354 #5540]  INFO -- : Processing by UsersController#my_friends as HTML
+D, [2016-07-19T19:34:13.363198 #5540] DEBUG -- :   [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+D, [2016-07-19T19:34:13.380343 #5540] DEBUG -- : my FRIENDS SHOULD BE HERE
+I, [2016-07-19T19:34:13.411206 #5540]  INFO -- :   Rendered common/_spinner.html.erb (0.1ms)
+I, [2016-07-19T19:34:13.411511 #5540]  INFO -- :   Rendered friends/_lookup.html.erb (3.7ms)
+D, [2016-07-19T19:34:13.414658 #5540] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = ?[0m  [["user_id", 4]]
+I, [2016-07-19T19:34:13.415395 #5540]  INFO -- :   Rendered users/my_friends.html.erb within layouts/application (9.3ms)
+I, [2016-07-19T19:34:13.546420 #5540]  INFO -- :   Rendered layouts/_navigation.html.erb (1.3ms)
+I, [2016-07-19T19:34:13.547477 #5540]  INFO -- : Completed 200 OK in 199ms (Views: 154.2ms | ActiveRecord: 2.2ms)
+D, [2016-07-19T19:34:13.848210 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:13.848413 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:13.848921 #5540]  INFO -- : Started GET "/assets/devise_bootstrap_views.self-397f5c503b7e0ad315dc70cedb38eb4e8a3af625a80fdfdeeba7f656bce8365b.css?body=1" for 82.131.86.226 at 2016-07-19 19:34:13 +0000
+D, [2016-07-19T19:34:13.939050 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:13.939802 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:14.033974 #5540]  INFO -- : Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 82.131.86.226 at 2016-07-19 19:34:14 +0000
+D, [2016-07-19T19:34:14.050602 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:14.060295 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:14.060735 #5540]  INFO -- : Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 82.131.86.226 at 2016-07-19 19:34:14 +0000
+D, [2016-07-19T19:34:14.081687 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:14.081913 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:14.082479 #5540]  INFO -- : Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 82.131.86.226 at 2016-07-19 19:34:14 +0000
+D, [2016-07-19T19:34:14.101794 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:14.101945 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:14.102249 #5540]  INFO -- : Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 82.131.86.226 at 2016-07-19 19:34:14 +0000
+D, [2016-07-19T19:34:14.112666 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:14.113043 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:14.114080 #5540]  INFO -- : Started GET "/assets/custom.self-87f1dc06363257c3dab692b237c69f701f5587f2f5273f9bdce887c24e636e1b.css?body=1" for 82.131.86.226 at 2016-07-19 19:34:14 +0000
+D, [2016-07-19T19:34:14.142280 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:14.142485 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:14.143530 #5540]  INFO -- : Started GET "/assets/user_stocks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 82.131.86.226 at 2016-07-19 19:34:14 +0000
+D, [2016-07-19T19:34:14.168601 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:14.169529 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:14.173643 #5540]  INFO -- : Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 82.131.86.226 at 2016-07-19 19:34:14 +0000
+D, [2016-07-19T19:34:14.193908 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:14.196155 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:14.196504 #5540]  INFO -- : Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:14 +0000
+D, [2016-07-19T19:34:14.213419 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:14.213711 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:14.214321 #5540]  INFO -- : Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:14 +0000
+D, [2016-07-19T19:34:14.228144 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:14.228451 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:14.228781 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:14 +0000
+D, [2016-07-19T19:34:14.246534 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:14.246792 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:14.260706 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:14 +0000
+D, [2016-07-19T19:34:14.276874 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:14.278773 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:14.279372 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:14 +0000
+D, [2016-07-19T19:34:14.295744 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:14.300017 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:14.300712 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:14 +0000
+D, [2016-07-19T19:34:14.313674 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:14.314322 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:14.314982 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:14 +0000
+D, [2016-07-19T19:34:14.328107 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:14.330462 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:14.330965 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:14 +0000
+D, [2016-07-19T19:34:14.350625 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:14.351011 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:14.351398 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:14 +0000
+D, [2016-07-19T19:34:14.369138 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:14.370109 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:14.370599 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:14 +0000
+D, [2016-07-19T19:34:14.391566 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:14.391828 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:14.392209 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:14 +0000
+D, [2016-07-19T19:34:14.415369 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:14.415608 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:14.416325 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:14 +0000
+D, [2016-07-19T19:34:14.433015 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:14.433160 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:14.433587 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:14 +0000
+D, [2016-07-19T19:34:14.448704 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:14.451245 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:14.452259 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:14 +0000
+D, [2016-07-19T19:34:14.466210 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:14.468762 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:14.469575 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:14 +0000
+D, [2016-07-19T19:34:14.501791 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:14.501967 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:14.502452 #5540]  INFO -- : Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:14 +0000
+D, [2016-07-19T19:34:14.518501 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:14.519986 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:14.520387 #5540]  INFO -- : Started GET "/assets/friends.self-9679189646438f794257e4ce1312872dda6392f4da96da755c4ceb9f7c86a5e7.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:14 +0000
+D, [2016-07-19T19:34:14.536603 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:14.536828 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:14.537486 #5540]  INFO -- : Started GET "/assets/stocks.self-385534548d1ef91bcfbb797ff29c1db96bcec5490587b7913cc5d0d57c8910bb.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:14 +0000
+D, [2016-07-19T19:34:14.555460 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:14.555676 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:14.556511 #5540]  INFO -- : Started GET "/assets/user_stocks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:14 +0000
+D, [2016-07-19T19:34:14.567620 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:14.567904 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:14.568221 #5540]  INFO -- : Started GET "/assets/application.self-51288526f6b14c1a39d37c113555a0aac57cbadc5b0557aad4790c41f8f4d904.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:14 +0000
+D, [2016-07-19T19:34:43.037136 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:43.037381 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:43.037783 #5540]  INFO -- : Started GET "/my_friends" for 82.131.86.226 at 2016-07-19 19:34:43 +0000
+I, [2016-07-19T19:34:43.047902 #5540]  INFO -- : Processing by UsersController#my_friends as HTML
+D, [2016-07-19T19:34:43.050050 #5540] DEBUG -- :   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+D, [2016-07-19T19:34:43.050625 #5540] DEBUG -- : my FRIENDS SHOULD BE HERE
+I, [2016-07-19T19:34:43.062145 #5540]  INFO -- :   Rendered common/_spinner.html.erb (0.1ms)
+I, [2016-07-19T19:34:43.062466 #5540]  INFO -- :   Rendered friends/_lookup.html.erb (2.3ms)
+D, [2016-07-19T19:34:43.064145 #5540] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = ?[0m  [["user_id", 4]]
+I, [2016-07-19T19:34:43.233326 #5540]  INFO -- :   Rendered users/my_friends.html.erb within layouts/application (5.4ms)
+I, [2016-07-19T19:34:43.373210 #5540]  INFO -- :   Rendered layouts/_navigation.html.erb (1.4ms)
+I, [2016-07-19T19:34:43.375078 #5540]  INFO -- : Completed 200 OK in 327ms (Views: 322.7ms | ActiveRecord: 0.4ms)
+D, [2016-07-19T19:34:43.671483 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:43.671642 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:43.672042 #5540]  INFO -- : Started GET "/assets/devise_bootstrap_views.self-397f5c503b7e0ad315dc70cedb38eb4e8a3af625a80fdfdeeba7f656bce8365b.css?body=1" for 82.131.86.226 at 2016-07-19 19:34:43 +0000
+D, [2016-07-19T19:34:43.758275 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:43.758441 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:43.758816 #5540]  INFO -- : Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 82.131.86.226 at 2016-07-19 19:34:43 +0000
+D, [2016-07-19T19:34:43.836042 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:43.844223 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:43.844593 #5540]  INFO -- : Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 82.131.86.226 at 2016-07-19 19:34:43 +0000
+D, [2016-07-19T19:34:43.862629 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:43.862780 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:43.863079 #5540]  INFO -- : Started GET "/assets/user_stocks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 82.131.86.226 at 2016-07-19 19:34:43 +0000
+D, [2016-07-19T19:34:43.875637 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:43.875816 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:43.876170 #5540]  INFO -- : Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 82.131.86.226 at 2016-07-19 19:34:43 +0000
+D, [2016-07-19T19:34:43.891865 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:43.892033 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:43.892712 #5540]  INFO -- : Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 82.131.86.226 at 2016-07-19 19:34:43 +0000
+D, [2016-07-19T19:34:43.905754 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:43.906012 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:43.906273 #5540]  INFO -- : Started GET "/assets/custom.self-87f1dc06363257c3dab692b237c69f701f5587f2f5273f9bdce887c24e636e1b.css?body=1" for 82.131.86.226 at 2016-07-19 19:34:43 +0000
+D, [2016-07-19T19:34:43.917288 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:43.917446 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:43.917956 #5540]  INFO -- : Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 82.131.86.226 at 2016-07-19 19:34:43 +0000
+D, [2016-07-19T19:34:43.935827 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:43.936057 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:43.936485 #5540]  INFO -- : Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:43 +0000
+D, [2016-07-19T19:34:43.954915 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:43.955178 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:43.955687 #5540]  INFO -- : Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:43 +0000
+D, [2016-07-19T19:34:43.972506 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:43.973110 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:43.975015 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:43 +0000
+D, [2016-07-19T19:34:43.999611 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:43.999844 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:44.000197 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:44 +0000
+D, [2016-07-19T19:34:44.017362 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:44.018090 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:44.018922 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:44 +0000
+D, [2016-07-19T19:34:44.037578 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:44.039433 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:44.041978 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:44 +0000
+D, [2016-07-19T19:34:44.063576 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:44.063828 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:44.065014 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:44 +0000
+D, [2016-07-19T19:34:44.084824 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:44.086494 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:44.086888 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:44 +0000
+D, [2016-07-19T19:34:44.104645 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:44.104839 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:44.105380 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:44 +0000
+D, [2016-07-19T19:34:44.124200 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:44.124386 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:44.127338 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:44 +0000
+D, [2016-07-19T19:34:44.150644 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:44.151652 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:44.153693 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:44 +0000
+D, [2016-07-19T19:34:44.169331 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:44.169537 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:44.170043 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:44 +0000
+D, [2016-07-19T19:34:44.188155 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:44.188313 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:44.188723 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:44 +0000
+D, [2016-07-19T19:34:44.203744 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:44.203981 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:44.204698 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:44 +0000
+D, [2016-07-19T19:34:44.226726 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:44.226857 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:44.227319 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:44 +0000
+D, [2016-07-19T19:34:44.270339 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:44.271088 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:44.274157 #5540]  INFO -- : Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:44 +0000
+D, [2016-07-19T19:34:44.288093 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:44.288287 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:44.288859 #5540]  INFO -- : Started GET "/assets/friends.self-9679189646438f794257e4ce1312872dda6392f4da96da755c4ceb9f7c86a5e7.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:44 +0000
+D, [2016-07-19T19:34:44.307402 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:44.307577 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:44.308028 #5540]  INFO -- : Started GET "/assets/stocks.self-385534548d1ef91bcfbb797ff29c1db96bcec5490587b7913cc5d0d57c8910bb.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:44 +0000
+D, [2016-07-19T19:34:44.321647 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:44.321844 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:44.322211 #5540]  INFO -- : Started GET "/assets/user_stocks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:44 +0000
+D, [2016-07-19T19:34:44.335654 #5540] DEBUG -- : 
+D, [2016-07-19T19:34:44.335976 #5540] DEBUG -- : 
+I, [2016-07-19T19:34:44.336825 #5540]  INFO -- : Started GET "/assets/application.self-51288526f6b14c1a39d37c113555a0aac57cbadc5b0557aad4790c41f8f4d904.js?body=1" for 82.131.86.226 at 2016-07-19 19:34:44 +0000
+D, [2016-07-19T19:35:10.577201 #5540] DEBUG -- : 
+D, [2016-07-19T19:35:10.577614 #5540] DEBUG -- : 
+I, [2016-07-19T19:35:10.578318 #5540]  INFO -- : Started GET "/my_friends" for 82.131.86.226 at 2016-07-19 19:35:10 +0000
+I, [2016-07-19T19:35:10.734345 #5540]  INFO -- : Processing by UsersController#my_friends as HTML
+D, [2016-07-19T19:35:10.745784 #5540] DEBUG -- :   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+W, [2016-07-19T19:35:10.761687 #5540]  WARN -- : my FRIENDS SHOULD BE HERE
+I, [2016-07-19T19:35:10.797767 #5540]  INFO -- :   Rendered common/_spinner.html.erb (0.1ms)
+I, [2016-07-19T19:35:10.798214 #5540]  INFO -- :   Rendered friends/_lookup.html.erb (2.7ms)
+D, [2016-07-19T19:35:10.800180 #5540] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = ?[0m  [["user_id", 4]]
+I, [2016-07-19T19:35:10.800671 #5540]  INFO -- :   Rendered users/my_friends.html.erb within layouts/application (7.1ms)
+I, [2016-07-19T19:35:10.958095 #5540]  INFO -- :   Rendered layouts/_navigation.html.erb (1.5ms)
+I, [2016-07-19T19:35:10.959005 #5540]  INFO -- : Completed 200 OK in 224ms (Views: 181.0ms | ActiveRecord: 1.9ms)
+D, [2016-07-19T19:35:11.193795 #5540] DEBUG -- : 
+D, [2016-07-19T19:35:11.194207 #5540] DEBUG -- : 
+I, [2016-07-19T19:35:11.194847 #5540]  INFO -- : Started GET "/assets/devise_bootstrap_views.self-397f5c503b7e0ad315dc70cedb38eb4e8a3af625a80fdfdeeba7f656bce8365b.css?body=1" for 82.131.86.226 at 2016-07-19 19:35:11 +0000
+D, [2016-07-19T19:35:11.312535 #5540] DEBUG -- : 
+D, [2016-07-19T19:35:11.312814 #5540] DEBUG -- : 
+I, [2016-07-19T19:35:11.313554 #5540]  INFO -- : Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 82.131.86.226 at 2016-07-19 19:35:11 +0000
+D, [2016-07-19T19:35:11.363457 #5540] DEBUG -- : 
+D, [2016-07-19T19:35:11.363961 #5540] DEBUG -- : 
+I, [2016-07-19T19:35:11.364831 #5540]  INFO -- : Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 82.131.86.226 at 2016-07-19 19:35:11 +0000
+D, [2016-07-19T19:35:11.392559 #5540] DEBUG -- : 
+D, [2016-07-19T19:35:11.396022 #5540] DEBUG -- : 
+I, [2016-07-19T19:35:11.396342 #5540]  INFO -- : Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 82.131.86.226 at 2016-07-19 19:35:11 +0000
+D, [2016-07-19T19:35:11.409455 #5540] DEBUG -- : 
+D, [2016-07-19T19:35:11.412244 #5540] DEBUG -- : 
+I, [2016-07-19T19:35:11.412853 #5540]  INFO -- : Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 82.131.86.226 at 2016-07-19 19:35:11 +0000
+D, [2016-07-19T19:35:11.429190 #5540] DEBUG -- : 
+D, [2016-07-19T19:35:11.429393 #5540] DEBUG -- : 
+I, [2016-07-19T19:35:11.429766 #5540]  INFO -- : Started GET "/assets/user_stocks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 82.131.86.226 at 2016-07-19 19:35:11 +0000
+D, [2016-07-19T19:35:11.448328 #5540] DEBUG -- : 
+D, [2016-07-19T19:35:11.450084 #5540] DEBUG -- : 
+I, [2016-07-19T19:35:11.451253 #5540]  INFO -- : Started GET "/assets/custom.self-87f1dc06363257c3dab692b237c69f701f5587f2f5273f9bdce887c24e636e1b.css?body=1" for 82.131.86.226 at 2016-07-19 19:35:11 +0000
+D, [2016-07-19T19:35:11.465802 #5540] DEBUG -- : 
+D, [2016-07-19T19:35:11.466134 #5540] DEBUG -- : 
+I, [2016-07-19T19:35:11.466720 #5540]  INFO -- : Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 82.131.86.226 at 2016-07-19 19:35:11 +0000
+D, [2016-07-19T19:35:11.486262 #5540] DEBUG -- : 
+D, [2016-07-19T19:35:11.486389 #5540] DEBUG -- : 
+I, [2016-07-19T19:35:11.486697 #5540]  INFO -- : Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 82.131.86.226 at 2016-07-19 19:35:11 +0000
+D, [2016-07-19T19:35:11.500646 #5540] DEBUG -- : 
+D, [2016-07-19T19:35:11.500796 #5540] DEBUG -- : 
+I, [2016-07-19T19:35:11.501157 #5540]  INFO -- : Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 82.131.86.226 at 2016-07-19 19:35:11 +0000
+D, [2016-07-19T19:35:11.521128 #5540] DEBUG -- : 
+D, [2016-07-19T19:35:11.521625 #5540] DEBUG -- : 
+I, [2016-07-19T19:35:11.522171 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 82.131.86.226 at 2016-07-19 19:35:11 +0000
+D, [2016-07-19T19:35:11.548650 #5540] DEBUG -- : 
+D, [2016-07-19T19:35:11.548927 #5540] DEBUG -- : 
+I, [2016-07-19T19:35:11.549446 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 82.131.86.226 at 2016-07-19 19:35:11 +0000
+D, [2016-07-19T19:35:11.565209 #5540] DEBUG -- : 
+D, [2016-07-19T19:35:11.566025 #5540] DEBUG -- : 
+I, [2016-07-19T19:35:11.566461 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 82.131.86.226 at 2016-07-19 19:35:11 +0000
+D, [2016-07-19T19:35:11.582317 #5540] DEBUG -- : 
+D, [2016-07-19T19:35:11.582587 #5540] DEBUG -- : 
+I, [2016-07-19T19:35:11.583354 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 82.131.86.226 at 2016-07-19 19:35:11 +0000
+D, [2016-07-19T19:35:11.601939 #5540] DEBUG -- : 
+D, [2016-07-19T19:35:11.602270 #5540] DEBUG -- : 
+I, [2016-07-19T19:35:11.602922 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 82.131.86.226 at 2016-07-19 19:35:11 +0000
+D, [2016-07-19T19:35:11.630974 #5540] DEBUG -- : 
+D, [2016-07-19T19:35:11.631187 #5540] DEBUG -- : 
+I, [2016-07-19T19:35:11.631597 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 82.131.86.226 at 2016-07-19 19:35:11 +0000
+D, [2016-07-19T19:35:11.653346 #5540] DEBUG -- : 
+D, [2016-07-19T19:35:11.656036 #5540] DEBUG -- : 
+I, [2016-07-19T19:35:11.656495 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 82.131.86.226 at 2016-07-19 19:35:11 +0000
+D, [2016-07-19T19:35:11.681935 #5540] DEBUG -- : 
+D, [2016-07-19T19:35:11.682409 #5540] DEBUG -- : 
+I, [2016-07-19T19:35:11.683086 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 82.131.86.226 at 2016-07-19 19:35:11 +0000
+D, [2016-07-19T19:35:11.705945 #5540] DEBUG -- : 
+D, [2016-07-19T19:35:11.706117 #5540] DEBUG -- : 
+I, [2016-07-19T19:35:11.706531 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 82.131.86.226 at 2016-07-19 19:35:11 +0000
+D, [2016-07-19T19:35:11.725352 #5540] DEBUG -- : 
+D, [2016-07-19T19:35:11.728510 #5540] DEBUG -- : 
+I, [2016-07-19T19:35:11.729286 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 82.131.86.226 at 2016-07-19 19:35:11 +0000
+D, [2016-07-19T19:35:11.756833 #5540] DEBUG -- : 
+D, [2016-07-19T19:35:11.757372 #5540] DEBUG -- : 
+I, [2016-07-19T19:35:11.758115 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 82.131.86.226 at 2016-07-19 19:35:11 +0000
+D, [2016-07-19T19:35:11.779898 #5540] DEBUG -- : 
+D, [2016-07-19T19:35:11.780160 #5540] DEBUG -- : 
+I, [2016-07-19T19:35:11.780692 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 82.131.86.226 at 2016-07-19 19:35:11 +0000
+D, [2016-07-19T19:35:11.800117 #5540] DEBUG -- : 
+D, [2016-07-19T19:35:11.800440 #5540] DEBUG -- : 
+I, [2016-07-19T19:35:11.801014 #5540]  INFO -- : Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 82.131.86.226 at 2016-07-19 19:35:11 +0000
+D, [2016-07-19T19:35:11.836827 #5540] DEBUG -- : 
+D, [2016-07-19T19:35:11.837087 #5540] DEBUG -- : 
+I, [2016-07-19T19:35:11.837950 #5540]  INFO -- : Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 82.131.86.226 at 2016-07-19 19:35:11 +0000
+D, [2016-07-19T19:35:11.857567 #5540] DEBUG -- : 
+D, [2016-07-19T19:35:11.858014 #5540] DEBUG -- : 
+I, [2016-07-19T19:35:11.858783 #5540]  INFO -- : Started GET "/assets/friends.self-9679189646438f794257e4ce1312872dda6392f4da96da755c4ceb9f7c86a5e7.js?body=1" for 82.131.86.226 at 2016-07-19 19:35:11 +0000
+D, [2016-07-19T19:35:11.877804 #5540] DEBUG -- : 
+D, [2016-07-19T19:35:11.878451 #5540] DEBUG -- : 
+I, [2016-07-19T19:35:11.883280 #5540]  INFO -- : Started GET "/assets/stocks.self-385534548d1ef91bcfbb797ff29c1db96bcec5490587b7913cc5d0d57c8910bb.js?body=1" for 82.131.86.226 at 2016-07-19 19:35:11 +0000
+D, [2016-07-19T19:35:11.894869 #5540] DEBUG -- : 
+D, [2016-07-19T19:35:11.895057 #5540] DEBUG -- : 
+I, [2016-07-19T19:35:11.895773 #5540]  INFO -- : Started GET "/assets/user_stocks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 82.131.86.226 at 2016-07-19 19:35:11 +0000
+D, [2016-07-19T19:35:11.910014 #5540] DEBUG -- : 
+D, [2016-07-19T19:35:11.910478 #5540] DEBUG -- : 
+I, [2016-07-19T19:35:11.911262 #5540]  INFO -- : Started GET "/assets/application.self-51288526f6b14c1a39d37c113555a0aac57cbadc5b0557aad4790c41f8f4d904.js?body=1" for 82.131.86.226 at 2016-07-19 19:35:11 +0000
+W, [2016-07-19T19:39:37.922709 #6607]  WARN -- : Got search
+D, [2016-07-19T19:40:15.963413 #6607] DEBUG -- : 
+D, [2016-07-19T19:40:15.963600 #6607] DEBUG -- : 
+I, [2016-07-19T19:40:15.964039 #6607]  INFO -- : Started GET "/my_friends" for 82.131.86.226 at 2016-07-19 19:40:15 +0000
+D, [2016-07-19T19:40:16.613290 #6607] DEBUG -- : 
+D, [2016-07-19T19:40:16.613436 #6607] DEBUG -- : 
+I, [2016-07-19T19:40:16.613711 #6607]  INFO -- : Started GET "/assets/devise_bootstrap_views.self-397f5c503b7e0ad315dc70cedb38eb4e8a3af625a80fdfdeeba7f656bce8365b.css?body=1" for 82.131.86.226 at 2016-07-19 19:40:16 +0000
+D, [2016-07-19T19:40:16.705758 #6607] DEBUG -- : 
+D, [2016-07-19T19:40:16.706439 #6607] DEBUG -- : 
+I, [2016-07-19T19:40:16.706773 #6607]  INFO -- : Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 82.131.86.226 at 2016-07-19 19:40:16 +0000
+D, [2016-07-19T19:40:16.765407 #6607] DEBUG -- : 
+D, [2016-07-19T19:40:16.765598 #6607] DEBUG -- : 
+I, [2016-07-19T19:40:16.765995 #6607]  INFO -- : Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 82.131.86.226 at 2016-07-19 19:40:16 +0000
+D, [2016-07-19T19:40:16.796672 #6607] DEBUG -- : 
+D, [2016-07-19T19:40:16.810995 #6607] DEBUG -- : 
+I, [2016-07-19T19:40:16.811695 #6607]  INFO -- : Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 82.131.86.226 at 2016-07-19 19:40:16 +0000
+D, [2016-07-19T19:40:16.829356 #6607] DEBUG -- : 
+D, [2016-07-19T19:40:16.829664 #6607] DEBUG -- : 
+I, [2016-07-19T19:40:16.830001 #6607]  INFO -- : Started GET "/assets/user_stocks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 82.131.86.226 at 2016-07-19 19:40:16 +0000
+D, [2016-07-19T19:40:16.849768 #6607] DEBUG -- : 
+D, [2016-07-19T19:40:16.850044 #6607] DEBUG -- : 
+I, [2016-07-19T19:40:16.851391 #6607]  INFO -- : Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 82.131.86.226 at 2016-07-19 19:40:16 +0000
+D, [2016-07-19T19:40:16.882885 #6607] DEBUG -- : 
+D, [2016-07-19T19:40:16.883590 #6607] DEBUG -- : 
+I, [2016-07-19T19:40:16.886860 #6607]  INFO -- : Started GET "/assets/custom.self-87f1dc06363257c3dab692b237c69f701f5587f2f5273f9bdce887c24e636e1b.css?body=1" for 82.131.86.226 at 2016-07-19 19:40:16 +0000
+D, [2016-07-19T19:40:16.910384 #6607] DEBUG -- : 
+D, [2016-07-19T19:40:16.911073 #6607] DEBUG -- : 
+I, [2016-07-19T19:40:16.911388 #6607]  INFO -- : Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 82.131.86.226 at 2016-07-19 19:40:16 +0000
+D, [2016-07-19T19:40:16.927955 #6607] DEBUG -- : 
+D, [2016-07-19T19:40:16.931901 #6607] DEBUG -- : 
+I, [2016-07-19T19:40:16.932176 #6607]  INFO -- : Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 82.131.86.226 at 2016-07-19 19:40:16 +0000
+D, [2016-07-19T19:40:16.947282 #6607] DEBUG -- : 
+D, [2016-07-19T19:40:16.947448 #6607] DEBUG -- : 
+I, [2016-07-19T19:40:16.947676 #6607]  INFO -- : Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 82.131.86.226 at 2016-07-19 19:40:16 +0000
+D, [2016-07-19T19:40:16.968583 #6607] DEBUG -- : 
+D, [2016-07-19T19:40:16.968736 #6607] DEBUG -- : 
+I, [2016-07-19T19:40:16.971056 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 82.131.86.226 at 2016-07-19 19:40:16 +0000
+D, [2016-07-19T19:40:16.998085 #6607] DEBUG -- : 
+D, [2016-07-19T19:40:16.998471 #6607] DEBUG -- : 
+I, [2016-07-19T19:40:16.998810 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 82.131.86.226 at 2016-07-19 19:40:16 +0000
+D, [2016-07-19T19:40:17.026728 #6607] DEBUG -- : 
+D, [2016-07-19T19:40:17.027803 #6607] DEBUG -- : 
+I, [2016-07-19T19:40:17.030633 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 82.131.86.226 at 2016-07-19 19:40:17 +0000
+D, [2016-07-19T19:40:17.058952 #6607] DEBUG -- : 
+D, [2016-07-19T19:40:17.059621 #6607] DEBUG -- : 
+I, [2016-07-19T19:40:17.059986 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 82.131.86.226 at 2016-07-19 19:40:17 +0000
+D, [2016-07-19T19:40:17.083499 #6607] DEBUG -- : 
+D, [2016-07-19T19:40:17.083998 #6607] DEBUG -- : 
+I, [2016-07-19T19:40:17.084373 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 82.131.86.226 at 2016-07-19 19:40:17 +0000
+D, [2016-07-19T19:40:17.105099 #6607] DEBUG -- : 
+D, [2016-07-19T19:40:17.105349 #6607] DEBUG -- : 
+I, [2016-07-19T19:40:17.105719 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 82.131.86.226 at 2016-07-19 19:40:17 +0000
+D, [2016-07-19T19:40:17.128774 #6607] DEBUG -- : 
+D, [2016-07-19T19:40:17.128992 #6607] DEBUG -- : 
+I, [2016-07-19T19:40:17.129686 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 82.131.86.226 at 2016-07-19 19:40:17 +0000
+D, [2016-07-19T19:40:17.148807 #6607] DEBUG -- : 
+D, [2016-07-19T19:40:17.149201 #6607] DEBUG -- : 
+I, [2016-07-19T19:40:17.149527 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 82.131.86.226 at 2016-07-19 19:40:17 +0000
+D, [2016-07-19T19:40:17.169897 #6607] DEBUG -- : 
+D, [2016-07-19T19:40:17.170171 #6607] DEBUG -- : 
+I, [2016-07-19T19:40:17.170551 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 82.131.86.226 at 2016-07-19 19:40:17 +0000
+D, [2016-07-19T19:40:17.199498 #6607] DEBUG -- : 
+D, [2016-07-19T19:40:17.199795 #6607] DEBUG -- : 
+I, [2016-07-19T19:40:17.200196 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 82.131.86.226 at 2016-07-19 19:40:17 +0000
+D, [2016-07-19T19:40:17.216343 #6607] DEBUG -- : 
+D, [2016-07-19T19:40:17.218774 #6607] DEBUG -- : 
+I, [2016-07-19T19:40:17.219280 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 82.131.86.226 at 2016-07-19 19:40:17 +0000
+D, [2016-07-19T19:40:17.237387 #6607] DEBUG -- : 
+D, [2016-07-19T19:40:17.237501 #6607] DEBUG -- : 
+I, [2016-07-19T19:40:17.237769 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 82.131.86.226 at 2016-07-19 19:40:17 +0000
+D, [2016-07-19T19:40:17.255885 #6607] DEBUG -- : 
+D, [2016-07-19T19:40:17.256021 #6607] DEBUG -- : 
+I, [2016-07-19T19:40:17.256412 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 82.131.86.226 at 2016-07-19 19:40:17 +0000
+D, [2016-07-19T19:40:17.297103 #6607] DEBUG -- : 
+D, [2016-07-19T19:40:17.297857 #6607] DEBUG -- : 
+I, [2016-07-19T19:40:17.301411 #6607]  INFO -- : Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 82.131.86.226 at 2016-07-19 19:40:17 +0000
+D, [2016-07-19T19:40:17.319156 #6607] DEBUG -- : 
+D, [2016-07-19T19:40:17.319416 #6607] DEBUG -- : 
+I, [2016-07-19T19:40:17.319641 #6607]  INFO -- : Started GET "/assets/friends.self-9679189646438f794257e4ce1312872dda6392f4da96da755c4ceb9f7c86a5e7.js?body=1" for 82.131.86.226 at 2016-07-19 19:40:17 +0000
+D, [2016-07-19T19:40:17.333256 #6607] DEBUG -- : 
+D, [2016-07-19T19:40:17.333345 #6607] DEBUG -- : 
+I, [2016-07-19T19:40:17.333566 #6607]  INFO -- : Started GET "/assets/stocks.self-385534548d1ef91bcfbb797ff29c1db96bcec5490587b7913cc5d0d57c8910bb.js?body=1" for 82.131.86.226 at 2016-07-19 19:40:17 +0000
+D, [2016-07-19T19:40:17.351764 #6607] DEBUG -- : 
+D, [2016-07-19T19:40:17.351935 #6607] DEBUG -- : 
+I, [2016-07-19T19:40:17.352444 #6607]  INFO -- : Started GET "/assets/user_stocks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 82.131.86.226 at 2016-07-19 19:40:17 +0000
+D, [2016-07-19T19:40:17.385986 #6607] DEBUG -- : 
+D, [2016-07-19T19:40:17.386883 #6607] DEBUG -- : 
+I, [2016-07-19T19:40:17.387388 #6607]  INFO -- : Started GET "/assets/application.self-51288526f6b14c1a39d37c113555a0aac57cbadc5b0557aad4790c41f8f4d904.js?body=1" for 82.131.86.226 at 2016-07-19 19:40:17 +0000
+D, [2016-07-19T19:40:21.565294 #6607] DEBUG -- : 
+D, [2016-07-19T19:40:21.565464 #6607] DEBUG -- : 
+I, [2016-07-19T19:40:21.565889 #6607]  INFO -- : Started GET "/search_friends?utf8=%E2%9C%93&search_param=aaa&button=" for 82.131.86.226 at 2016-07-19 19:40:21 +0000
+D, [2016-07-19T19:41:25.694777 #6607] DEBUG -- : 
+D, [2016-07-19T19:41:25.694954 #6607] DEBUG -- : 
+I, [2016-07-19T19:41:25.695470 #6607]  INFO -- : Started GET "/search_friends?utf8=%E2%9C%93&search_param=aaa&button=" for 82.131.86.226 at 2016-07-19 19:41:25 +0000
+D, [2016-07-19T19:41:28.865026 #6607] DEBUG -- : 
+D, [2016-07-19T19:41:28.865221 #6607] DEBUG -- : 
+I, [2016-07-19T19:41:28.865510 #6607]  INFO -- : Started GET "/my_friends" for 82.131.86.226 at 2016-07-19 19:41:28 +0000
+D, [2016-07-19T19:41:29.509219 #6607] DEBUG -- : 
+D, [2016-07-19T19:41:29.509378 #6607] DEBUG -- : 
+I, [2016-07-19T19:41:29.509759 #6607]  INFO -- : Started GET "/assets/devise_bootstrap_views.self-397f5c503b7e0ad315dc70cedb38eb4e8a3af625a80fdfdeeba7f656bce8365b.css?body=1" for 82.131.86.226 at 2016-07-19 19:41:29 +0000
+D, [2016-07-19T19:41:29.599264 #6607] DEBUG -- : 
+D, [2016-07-19T19:41:29.599437 #6607] DEBUG -- : 
+I, [2016-07-19T19:41:29.599839 #6607]  INFO -- : Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 82.131.86.226 at 2016-07-19 19:41:29 +0000
+D, [2016-07-19T19:41:29.639359 #6607] DEBUG -- : 
+D, [2016-07-19T19:41:29.639484 #6607] DEBUG -- : 
+I, [2016-07-19T19:41:29.639799 #6607]  INFO -- : Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 82.131.86.226 at 2016-07-19 19:41:29 +0000
+D, [2016-07-19T19:41:29.668399 #6607] DEBUG -- : 
+D, [2016-07-19T19:41:29.668540 #6607] DEBUG -- : 
+I, [2016-07-19T19:41:29.669340 #6607]  INFO -- : Started GET "/assets/custom.self-87f1dc06363257c3dab692b237c69f701f5587f2f5273f9bdce887c24e636e1b.css?body=1" for 82.131.86.226 at 2016-07-19 19:41:29 +0000
+D, [2016-07-19T19:41:29.694039 #6607] DEBUG -- : 
+D, [2016-07-19T19:41:29.694293 #6607] DEBUG -- : 
+I, [2016-07-19T19:41:29.694548 #6607]  INFO -- : Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 82.131.86.226 at 2016-07-19 19:41:29 +0000
+D, [2016-07-19T19:41:29.707510 #6607] DEBUG -- : 
+D, [2016-07-19T19:41:29.707643 #6607] DEBUG -- : 
+I, [2016-07-19T19:41:29.707981 #6607]  INFO -- : Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 82.131.86.226 at 2016-07-19 19:41:29 +0000
+D, [2016-07-19T19:41:29.726760 #6607] DEBUG -- : 
+D, [2016-07-19T19:41:29.727015 #6607] DEBUG -- : 
+I, [2016-07-19T19:41:29.727301 #6607]  INFO -- : Started GET "/assets/user_stocks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 82.131.86.226 at 2016-07-19 19:41:29 +0000
+D, [2016-07-19T19:41:29.745409 #6607] DEBUG -- : 
+D, [2016-07-19T19:41:29.745720 #6607] DEBUG -- : 
+I, [2016-07-19T19:41:29.746413 #6607]  INFO -- : Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 82.131.86.226 at 2016-07-19 19:41:29 +0000
+D, [2016-07-19T19:41:29.772466 #6607] DEBUG -- : 
+D, [2016-07-19T19:41:29.772621 #6607] DEBUG -- : 
+I, [2016-07-19T19:41:29.775440 #6607]  INFO -- : Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 82.131.86.226 at 2016-07-19 19:41:29 +0000
+D, [2016-07-19T19:41:29.793950 #6607] DEBUG -- : 
+D, [2016-07-19T19:41:29.794270 #6607] DEBUG -- : 
+I, [2016-07-19T19:41:29.795009 #6607]  INFO -- : Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 82.131.86.226 at 2016-07-19 19:41:29 +0000
+D, [2016-07-19T19:41:29.811644 #6607] DEBUG -- : 
+D, [2016-07-19T19:41:29.811824 #6607] DEBUG -- : 
+I, [2016-07-19T19:41:29.812241 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 82.131.86.226 at 2016-07-19 19:41:29 +0000
+D, [2016-07-19T19:41:29.838039 #6607] DEBUG -- : 
+D, [2016-07-19T19:41:29.838160 #6607] DEBUG -- : 
+I, [2016-07-19T19:41:29.838500 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 82.131.86.226 at 2016-07-19 19:41:29 +0000
+D, [2016-07-19T19:41:29.858076 #6607] DEBUG -- : 
+D, [2016-07-19T19:41:29.858239 #6607] DEBUG -- : 
+I, [2016-07-19T19:41:29.858558 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 82.131.86.226 at 2016-07-19 19:41:29 +0000
+D, [2016-07-19T19:41:29.902295 #6607] DEBUG -- : 
+D, [2016-07-19T19:41:29.903018 #6607] DEBUG -- : 
+I, [2016-07-19T19:41:29.910457 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 82.131.86.226 at 2016-07-19 19:41:29 +0000
+D, [2016-07-19T19:41:29.933284 #6607] DEBUG -- : 
+D, [2016-07-19T19:41:29.933530 #6607] DEBUG -- : 
+I, [2016-07-19T19:41:29.933918 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 82.131.86.226 at 2016-07-19 19:41:29 +0000
+D, [2016-07-19T19:41:29.949391 #6607] DEBUG -- : 
+D, [2016-07-19T19:41:29.949636 #6607] DEBUG -- : 
+I, [2016-07-19T19:41:29.950583 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 82.131.86.226 at 2016-07-19 19:41:29 +0000
+D, [2016-07-19T19:41:29.975403 #6607] DEBUG -- : 
+D, [2016-07-19T19:41:29.975939 #6607] DEBUG -- : 
+I, [2016-07-19T19:41:29.980502 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 82.131.86.226 at 2016-07-19 19:41:29 +0000
+D, [2016-07-19T19:41:29.996355 #6607] DEBUG -- : 
+D, [2016-07-19T19:41:29.996658 #6607] DEBUG -- : 
+I, [2016-07-19T19:41:29.997080 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 82.131.86.226 at 2016-07-19 19:41:29 +0000
+D, [2016-07-19T19:41:30.024731 #6607] DEBUG -- : 
+D, [2016-07-19T19:41:30.032639 #6607] DEBUG -- : 
+I, [2016-07-19T19:41:30.033264 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 82.131.86.226 at 2016-07-19 19:41:30 +0000
+D, [2016-07-19T19:41:30.057336 #6607] DEBUG -- : 
+D, [2016-07-19T19:41:30.057602 #6607] DEBUG -- : 
+I, [2016-07-19T19:41:30.057973 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 82.131.86.226 at 2016-07-19 19:41:30 +0000
+D, [2016-07-19T19:41:30.082079 #6607] DEBUG -- : 
+D, [2016-07-19T19:41:30.082421 #6607] DEBUG -- : 
+I, [2016-07-19T19:41:30.082667 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 82.131.86.226 at 2016-07-19 19:41:30 +0000
+D, [2016-07-19T19:41:30.106144 #6607] DEBUG -- : 
+D, [2016-07-19T19:41:30.106326 #6607] DEBUG -- : 
+I, [2016-07-19T19:41:30.106696 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 82.131.86.226 at 2016-07-19 19:41:30 +0000
+D, [2016-07-19T19:41:30.132533 #6607] DEBUG -- : 
+D, [2016-07-19T19:41:30.132716 #6607] DEBUG -- : 
+I, [2016-07-19T19:41:30.133934 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 82.131.86.226 at 2016-07-19 19:41:30 +0000
+D, [2016-07-19T19:41:30.178398 #6607] DEBUG -- : 
+D, [2016-07-19T19:41:30.179659 #6607] DEBUG -- : 
+I, [2016-07-19T19:41:30.185220 #6607]  INFO -- : Started GET "/assets/friends.self-9679189646438f794257e4ce1312872dda6392f4da96da755c4ceb9f7c86a5e7.js?body=1" for 82.131.86.226 at 2016-07-19 19:41:30 +0000
+D, [2016-07-19T19:41:30.199406 #6607] DEBUG -- : 
+D, [2016-07-19T19:41:30.199827 #6607] DEBUG -- : 
+I, [2016-07-19T19:41:30.200934 #6607]  INFO -- : Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 82.131.86.226 at 2016-07-19 19:41:30 +0000
+D, [2016-07-19T19:41:30.224224 #6607] DEBUG -- : 
+D, [2016-07-19T19:41:30.224976 #6607] DEBUG -- : 
+I, [2016-07-19T19:41:30.225266 #6607]  INFO -- : Started GET "/assets/user_stocks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 82.131.86.226 at 2016-07-19 19:41:30 +0000
+D, [2016-07-19T19:41:30.241211 #6607] DEBUG -- : 
+D, [2016-07-19T19:41:30.241320 #6607] DEBUG -- : 
+I, [2016-07-19T19:41:30.241991 #6607]  INFO -- : Started GET "/assets/stocks.self-385534548d1ef91bcfbb797ff29c1db96bcec5490587b7913cc5d0d57c8910bb.js?body=1" for 82.131.86.226 at 2016-07-19 19:41:30 +0000
+D, [2016-07-19T19:41:30.258172 #6607] DEBUG -- : 
+D, [2016-07-19T19:41:30.258492 #6607] DEBUG -- : 
+I, [2016-07-19T19:41:30.259767 #6607]  INFO -- : Started GET "/assets/application.self-51288526f6b14c1a39d37c113555a0aac57cbadc5b0557aad4790c41f8f4d904.js?body=1" for 82.131.86.226 at 2016-07-19 19:41:30 +0000
+D, [2016-07-19T19:41:33.469362 #6607] DEBUG -- : 
+D, [2016-07-19T19:41:33.469542 #6607] DEBUG -- : 
+I, [2016-07-19T19:41:33.469924 #6607]  INFO -- : Started GET "/search_friends?utf8=%E2%9C%93&search_param=aaa&button=" for 82.131.86.226 at 2016-07-19 19:41:33 +0000
+D, [2016-07-19T19:41:59.178085 #6607] DEBUG -- : 
+D, [2016-07-19T19:41:59.178235 #6607] DEBUG -- : 
+I, [2016-07-19T19:41:59.178498 #6607]  INFO -- : Started GET "/my_friends" for 82.131.86.226 at 2016-07-19 19:41:59 +0000
+D, [2016-07-19T19:41:59.911627 #6607] DEBUG -- : 
+D, [2016-07-19T19:41:59.912250 #6607] DEBUG -- : 
+I, [2016-07-19T19:41:59.912731 #6607]  INFO -- : Started GET "/assets/devise_bootstrap_views.self-397f5c503b7e0ad315dc70cedb38eb4e8a3af625a80fdfdeeba7f656bce8365b.css?body=1" for 82.131.86.226 at 2016-07-19 19:41:59 +0000
+D, [2016-07-19T19:42:00.034384 #6607] DEBUG -- : 
+D, [2016-07-19T19:42:00.034519 #6607] DEBUG -- : 
+I, [2016-07-19T19:42:00.034741 #6607]  INFO -- : Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 82.131.86.226 at 2016-07-19 19:42:00 +0000
+D, [2016-07-19T19:42:00.057601 #6607] DEBUG -- : 
+D, [2016-07-19T19:42:00.057778 #6607] DEBUG -- : 
+I, [2016-07-19T19:42:00.060489 #6607]  INFO -- : Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 82.131.86.226 at 2016-07-19 19:42:00 +0000
+D, [2016-07-19T19:42:00.082099 #6607] DEBUG -- : 
+D, [2016-07-19T19:42:00.082245 #6607] DEBUG -- : 
+I, [2016-07-19T19:42:00.085597 #6607]  INFO -- : Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 82.131.86.226 at 2016-07-19 19:42:00 +0000
+D, [2016-07-19T19:42:00.101792 #6607] DEBUG -- : 
+D, [2016-07-19T19:42:00.101921 #6607] DEBUG -- : 
+I, [2016-07-19T19:42:00.102195 #6607]  INFO -- : Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 82.131.86.226 at 2016-07-19 19:42:00 +0000
+D, [2016-07-19T19:42:00.114661 #6607] DEBUG -- : 
+D, [2016-07-19T19:42:00.114807 #6607] DEBUG -- : 
+I, [2016-07-19T19:42:00.115207 #6607]  INFO -- : Started GET "/assets/custom.self-87f1dc06363257c3dab692b237c69f701f5587f2f5273f9bdce887c24e636e1b.css?body=1" for 82.131.86.226 at 2016-07-19 19:42:00 +0000
+D, [2016-07-19T19:42:00.128205 #6607] DEBUG -- : 
+D, [2016-07-19T19:42:00.128494 #6607] DEBUG -- : 
+I, [2016-07-19T19:42:00.128796 #6607]  INFO -- : Started GET "/assets/user_stocks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 82.131.86.226 at 2016-07-19 19:42:00 +0000
+D, [2016-07-19T19:42:00.199893 #6607] DEBUG -- : 
+D, [2016-07-19T19:42:00.200041 #6607] DEBUG -- : 
+I, [2016-07-19T19:42:00.200464 #6607]  INFO -- : Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 82.131.86.226 at 2016-07-19 19:42:00 +0000
+D, [2016-07-19T19:42:00.224483 #6607] DEBUG -- : 
+D, [2016-07-19T19:42:00.224798 #6607] DEBUG -- : 
+I, [2016-07-19T19:42:00.225367 #6607]  INFO -- : Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 82.131.86.226 at 2016-07-19 19:42:00 +0000
+D, [2016-07-19T19:42:00.251902 #6607] DEBUG -- : 
+D, [2016-07-19T19:42:00.254080 #6607] DEBUG -- : 
+I, [2016-07-19T19:42:00.254433 #6607]  INFO -- : Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 82.131.86.226 at 2016-07-19 19:42:00 +0000
+D, [2016-07-19T19:42:00.271849 #6607] DEBUG -- : 
+D, [2016-07-19T19:42:00.271962 #6607] DEBUG -- : 
+I, [2016-07-19T19:42:00.272335 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 82.131.86.226 at 2016-07-19 19:42:00 +0000
+D, [2016-07-19T19:42:00.291598 #6607] DEBUG -- : 
+D, [2016-07-19T19:42:00.291730 #6607] DEBUG -- : 
+I, [2016-07-19T19:42:00.291957 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 82.131.86.226 at 2016-07-19 19:42:00 +0000
+D, [2016-07-19T19:42:00.315587 #6607] DEBUG -- : 
+D, [2016-07-19T19:42:00.316077 #6607] DEBUG -- : 
+I, [2016-07-19T19:42:00.316386 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 82.131.86.226 at 2016-07-19 19:42:00 +0000
+D, [2016-07-19T19:42:00.341884 #6607] DEBUG -- : 
+D, [2016-07-19T19:42:00.342087 #6607] DEBUG -- : 
+I, [2016-07-19T19:42:00.342474 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 82.131.86.226 at 2016-07-19 19:42:00 +0000
+D, [2016-07-19T19:42:00.372139 #6607] DEBUG -- : 
+D, [2016-07-19T19:42:00.372719 #6607] DEBUG -- : 
+I, [2016-07-19T19:42:00.373084 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 82.131.86.226 at 2016-07-19 19:42:00 +0000
+D, [2016-07-19T19:42:00.399892 #6607] DEBUG -- : 
+D, [2016-07-19T19:42:00.400613 #6607] DEBUG -- : 
+I, [2016-07-19T19:42:00.401328 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 82.131.86.226 at 2016-07-19 19:42:00 +0000
+D, [2016-07-19T19:42:00.430382 #6607] DEBUG -- : 
+D, [2016-07-19T19:42:00.430513 #6607] DEBUG -- : 
+I, [2016-07-19T19:42:00.430947 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 82.131.86.226 at 2016-07-19 19:42:00 +0000
+D, [2016-07-19T19:42:00.452504 #6607] DEBUG -- : 
+D, [2016-07-19T19:42:00.452640 #6607] DEBUG -- : 
+I, [2016-07-19T19:42:00.453968 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 82.131.86.226 at 2016-07-19 19:42:00 +0000
+D, [2016-07-19T19:42:00.496164 #6607] DEBUG -- : 
+D, [2016-07-19T19:42:00.504689 #6607] DEBUG -- : 
+I, [2016-07-19T19:42:00.505114 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 82.131.86.226 at 2016-07-19 19:42:00 +0000
+D, [2016-07-19T19:42:00.532168 #6607] DEBUG -- : 
+D, [2016-07-19T19:42:00.532705 #6607] DEBUG -- : 
+I, [2016-07-19T19:42:00.533162 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 82.131.86.226 at 2016-07-19 19:42:00 +0000
+D, [2016-07-19T19:42:00.563215 #6607] DEBUG -- : 
+D, [2016-07-19T19:42:00.563820 #6607] DEBUG -- : 
+I, [2016-07-19T19:42:00.564155 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 82.131.86.226 at 2016-07-19 19:42:00 +0000
+D, [2016-07-19T19:42:00.589669 #6607] DEBUG -- : 
+D, [2016-07-19T19:42:00.589849 #6607] DEBUG -- : 
+I, [2016-07-19T19:42:00.590489 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 82.131.86.226 at 2016-07-19 19:42:00 +0000
+D, [2016-07-19T19:42:00.643352 #6607] DEBUG -- : 
+D, [2016-07-19T19:42:00.643493 #6607] DEBUG -- : 
+I, [2016-07-19T19:42:00.643820 #6607]  INFO -- : Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 82.131.86.226 at 2016-07-19 19:42:00 +0000
+D, [2016-07-19T19:42:00.694969 #6607] DEBUG -- : 
+D, [2016-07-19T19:42:00.695093 #6607] DEBUG -- : 
+I, [2016-07-19T19:42:00.695391 #6607]  INFO -- : Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 82.131.86.226 at 2016-07-19 19:42:00 +0000
+D, [2016-07-19T19:42:00.730513 #6607] DEBUG -- : 
+D, [2016-07-19T19:42:00.739503 #6607] DEBUG -- : 
+I, [2016-07-19T19:42:00.739960 #6607]  INFO -- : Started GET "/assets/stocks.self-385534548d1ef91bcfbb797ff29c1db96bcec5490587b7913cc5d0d57c8910bb.js?body=1" for 82.131.86.226 at 2016-07-19 19:42:00 +0000
+D, [2016-07-19T19:42:00.763540 #6607] DEBUG -- : 
+D, [2016-07-19T19:42:00.766474 #6607] DEBUG -- : 
+I, [2016-07-19T19:42:00.766813 #6607]  INFO -- : Started GET "/assets/user_stocks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 82.131.86.226 at 2016-07-19 19:42:00 +0000
+D, [2016-07-19T19:42:00.784753 #6607] DEBUG -- : 
+D, [2016-07-19T19:42:00.784949 #6607] DEBUG -- : 
+I, [2016-07-19T19:42:00.785312 #6607]  INFO -- : Started GET "/assets/friends.self-9679189646438f794257e4ce1312872dda6392f4da96da755c4ceb9f7c86a5e7.js?body=1" for 82.131.86.226 at 2016-07-19 19:42:00 +0000
+D, [2016-07-19T19:42:00.801462 #6607] DEBUG -- : 
+D, [2016-07-19T19:42:00.801558 #6607] DEBUG -- : 
+I, [2016-07-19T19:42:00.801831 #6607]  INFO -- : Started GET "/assets/application.self-51288526f6b14c1a39d37c113555a0aac57cbadc5b0557aad4790c41f8f4d904.js?body=1" for 82.131.86.226 at 2016-07-19 19:42:00 +0000
+D, [2016-07-19T19:42:00.993432 #6607] DEBUG -- : 
+D, [2016-07-19T19:42:00.994043 #6607] DEBUG -- : 
+I, [2016-07-19T19:42:00.994280 #6607]  INFO -- : Started GET "/assets/fontawesome-webfont-a7c7e4930090e038a280fd61d88f0dc03dad4aeaedbd8c9be3dd9aa4c3b6f8d1.woff" for 82.131.86.226 at 2016-07-19 19:42:00 +0000
+D, [2016-07-19T19:42:05.537120 #6607] DEBUG -- : 
+D, [2016-07-19T19:42:05.537248 #6607] DEBUG -- : 
+I, [2016-07-19T19:42:05.537616 #6607]  INFO -- : Started GET "/search_friends?utf8=%E2%9C%93&search_param=aaa&button=" for 82.131.86.226 at 2016-07-19 19:42:05 +0000
+D, [2016-07-19T19:42:39.309612 #6607] DEBUG -- : 
+D, [2016-07-19T19:42:39.312217 #6607] DEBUG -- : 
+I, [2016-07-19T19:42:39.312583 #6607]  INFO -- : Started GET "/search_friends?utf8=%E2%9C%93&search_param=%40&button=" for 82.131.86.226 at 2016-07-19 19:42:39 +0000
+D, [2016-07-19T19:42:43.758655 #6607] DEBUG -- : 
+D, [2016-07-19T19:42:43.758814 #6607] DEBUG -- : 
+I, [2016-07-19T19:42:43.759171 #6607]  INFO -- : Started POST "/add_friend?friend=3&user=4" for 82.131.86.226 at 2016-07-19 19:42:43 +0000
+D, [2016-07-19T19:42:43.946701 #6607] DEBUG -- : 
+D, [2016-07-19T19:42:43.947228 #6607] DEBUG -- : 
+I, [2016-07-19T19:42:43.947476 #6607]  INFO -- : Started GET "/my_friends" for 82.131.86.226 at 2016-07-19 19:42:43 +0000
+D, [2016-07-19T19:42:48.319321 #6607] DEBUG -- : 
+D, [2016-07-19T19:42:48.319516 #6607] DEBUG -- : 
+I, [2016-07-19T19:42:48.319761 #6607]  INFO -- : Started GET "/users/3" for 82.131.86.226 at 2016-07-19 19:42:48 +0000
+D, [2016-07-19T19:44:51.299123 #6607] DEBUG -- : 
+D, [2016-07-19T19:44:51.299358 #6607] DEBUG -- : 
+I, [2016-07-19T19:44:51.299709 #6607]  INFO -- : Started GET "/my_friends" for 82.131.86.226 at 2016-07-19 19:44:51 +0000
+D, [2016-07-19T19:45:58.142740 #6607] DEBUG -- : 
+D, [2016-07-19T19:45:58.143142 #6607] DEBUG -- : 
+I, [2016-07-19T19:45:58.143624 #6607]  INFO -- : Started DELETE "/users/sign_out" for 82.131.86.226 at 2016-07-19 19:45:58 +0000
+D, [2016-07-19T19:45:58.420158 #6607] DEBUG -- : 
+D, [2016-07-19T19:45:58.420307 #6607] DEBUG -- : 
+I, [2016-07-19T19:45:58.420627 #6607]  INFO -- : Started GET "/" for 82.131.86.226 at 2016-07-19 19:45:58 +0000
+D, [2016-07-19T19:45:58.578001 #6607] DEBUG -- : 
+D, [2016-07-19T19:45:58.578177 #6607] DEBUG -- : 
+I, [2016-07-19T19:45:58.578463 #6607]  INFO -- : Started GET "/users/sign_in" for 82.131.86.226 at 2016-07-19 19:45:58 +0000
+D, [2016-07-19T19:46:07.228757 #6607] DEBUG -- : 
+D, [2016-07-19T19:46:07.228966 #6607] DEBUG -- : 
+I, [2016-07-19T19:46:07.229173 #6607]  INFO -- : Started POST "/users/sign_in" for 82.131.86.226 at 2016-07-19 19:46:07 +0000
+D, [2016-07-19T19:46:07.603076 #6607] DEBUG -- : 
+D, [2016-07-19T19:46:07.603247 #6607] DEBUG -- : 
+I, [2016-07-19T19:46:07.603476 #6607]  INFO -- : Started GET "/" for 82.131.86.226 at 2016-07-19 19:46:07 +0000
+D, [2016-07-19T19:46:11.053587 #6607] DEBUG -- : 
+D, [2016-07-19T19:46:11.053718 #6607] DEBUG -- : 
+I, [2016-07-19T19:46:11.053920 #6607]  INFO -- : Started GET "/my_portfolio" for 82.131.86.226 at 2016-07-19 19:46:11 +0000
+D, [2016-07-19T19:46:20.652726 #6607] DEBUG -- : 
+D, [2016-07-19T19:46:20.654158 #6607] DEBUG -- : 
+I, [2016-07-19T19:46:20.654432 #6607]  INFO -- : Started GET "/users/edit" for 82.131.86.226 at 2016-07-19 19:46:20 +0000
+W, [2016-07-19T19:46:20.708271 #6607]  WARN -- : DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(sign_up) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, except: [:email])
+ (called from configure_permitted_parameters at /home/ubuntu/workspace/app/controllers/user/registrations_controller.rb:7)
+W, [2016-07-19T19:46:20.708819 #6607]  WARN -- : DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(account_update) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, except: [:email])
+ (called from configure_permitted_parameters at /home/ubuntu/workspace/app/controllers/user/registrations_controller.rb:8)
+D, [2016-07-19T19:46:25.408098 #6607] DEBUG -- : 
+D, [2016-07-19T19:46:25.408293 #6607] DEBUG -- : 
+I, [2016-07-19T19:46:25.408570 #6607]  INFO -- : Started GET "/my_friends" for 82.131.86.226 at 2016-07-19 19:46:25 +0000
+D, [2016-07-19T19:46:33.278598 #6607] DEBUG -- : 
+D, [2016-07-19T19:46:33.278749 #6607] DEBUG -- : 
+I, [2016-07-19T19:46:33.279254 #6607]  INFO -- : Started GET "/search_friends?utf8=%E2%9C%93&search_param=KOT&button=" for 82.131.86.226 at 2016-07-19 19:46:33 +0000
+D, [2016-07-19T19:46:37.032654 #6607] DEBUG -- : 
+D, [2016-07-19T19:46:37.033277 #6607] DEBUG -- : 
+I, [2016-07-19T19:46:37.033682 #6607]  INFO -- : Started POST "/add_friend?friend=4&user=1" for 82.131.86.226 at 2016-07-19 19:46:37 +0000
+D, [2016-07-19T19:46:37.172529 #6607] DEBUG -- : 
+D, [2016-07-19T19:46:37.172711 #6607] DEBUG -- : 
+I, [2016-07-19T19:46:37.173089 #6607]  INFO -- : Started GET "/my_friends" for 82.131.86.226 at 2016-07-19 19:46:37 +0000
